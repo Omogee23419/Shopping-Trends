@@ -27,7 +27,7 @@ pip install pandas matplotlib numpy
 1. Open `project.ipynb` in Jupyter Notebook or VS Code and run the cells sequentially.
 2. Ensure `shopping_trends.csv` is in the same directory as the notebook.
 
-## Observations & Notes (based on reading the notebook)
+## 
 
 - The notebook performs EDA and visualizations but does not modify or save cleaned data.
 - Visualizations include: histograms for `Age` and `Purchase Amount (USD)`, bar charts for category counts, pie charts for payment method and season totals, boxplots comparing purchase amounts across frequency groups, and scatter plots comparing previous purchases to review rating.
@@ -35,14 +35,4 @@ pip install pandas matplotlib numpy
 - The notebook currently assumes column names match exactly; no explicit error handling is included for missing columns.
 - Some cells create plots without clearing figures between them; when run in sequence this is fine, but when re-running single cells in a long session, call `plt.clf()` if needed.
 
-## Suggested next steps
 
-- Add a small data-cleaning section to handle missing values and standardize column names.
-- Add comments or markdown cells explaining key findings (e.g., which season has highest spending, which payment methods are most popular).
-- Save key summary tables to CSV for downstream use.
-- Improve plots with labels, percentages on pie charts, and color palettes for readability.
-- Add a requirements.txt or environment.yml for reproducibility.
-
-## Contact
-
-If you'd like, I can help: add cleaning steps, create clearer visualization code (with seaborn), or produce a short report summarizing the top insights with code cells that produce the exact numbers and plots referenced.
